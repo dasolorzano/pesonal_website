@@ -1,0 +1,52 @@
+k*{
+    /* eliminar margenes que por automatico da el navegador */
+margin: 0;
+padding:0;
+
+}
+/* p{
+    margin:50px ;
+    border:solid 5px blue ;
+    padding: 30px;
+} */
+
+/* barra de menu */
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+
+}
+li{
+    border: solid 1px black;
+    padding: 15px;
+    background-color: beige;
+    width: 200px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 30px ;
+    box-shadow: 3px 3px 3px black;
+    /* ETQ: box-shadow; no.+ arriba/ no.- abajo,no.+ derecha/ no.- izquierda, intencidad, color */
+}
+
+p{
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 30px;
+    text-shadow: -3px -3px 3px rgb(49, 72, 115);
+    letter-spacing: 3px;
+}
+
+img {
+    width: 300px;
+}
+
+header{
+    background: linear-gradient( cornflowerblue, beige);
+/* backgroun: linear-grading indica difuminar colores Maximo 3 colores  */
+padding: 80px;
+}
+
+ul{
+    display: flex;
+    /* ETQ display (box); flex _ formna en que movemos elementos */
+}
