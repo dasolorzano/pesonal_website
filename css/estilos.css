@@ -2,7 +2,6 @@ k*{
     /* eliminar margenes que por automatico da el navegador */
 margin: 0;
 padding:0;
-
 }
 /* p{
     margin:50px ;
@@ -11,15 +10,17 @@ padding:0;
 } */
 
 /* barra de menu */
+
+
 a{
     text-decoration: none;
-    color: rgb(100, 109, 237);
-
+    color: #22007c;
+    font-weight: bold;
 }
 li{
     border: solid 1px black;
     padding: 15px;
-    background-color: beige;
+    background-color: #fdfcdc;
     width: 200px;
     margin: 30px;
     text-align: center;
@@ -29,7 +30,10 @@ li{
     list-style-type: none;
 }
 li:hover{
-    opacity: 0.5;
+    color: #fdfcdc;
+    background-color: #7678ed;
+    font-size: 1.5em;
+    opacity: .5;
 }
 nav p {
     font-weight: bold;
@@ -38,19 +42,16 @@ nav p {
     text-shadow: -3px -3px 3px cornflowerblue;
     letter-spacing: 3px;
 }
-
 img {
     width: 15em;
 }
-
 header{
-    background: linear-gradient( beige,rgb(252, 252, 201), rgb(100, 109, 237));
+    background: linear-gradient( #faedcd,#faedcd,#fefae0,rgba(40, 139, 231, 0.404), rgba(40, 139, 231, 0.404),#fff,#fff);
 /* backgroun: linear-grading indica difuminar colores Maximo 3 colores  */
     padding: 80px;
     width:100%;
     height: 100vh;
 }
-
 ul{
     display: flex;
     /* ETQ display (box); flex _ formna en que movemos elementos */
@@ -83,6 +84,44 @@ span{
     font-style: italic;
     text-shadow: 3px 3px 3px black;
 }
+/* starts section ACERCA DE */
+
+.acerca{
+    width: 100%;
+    height: 80vh;
+    background: url(../img/fondo_azul.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+.acerca2{
+    width: 60%;
+    height: 50vh;
+    text-align:justify;
+    background: linear-gradient(to right,  rgba(40, 139, 231, 0.493), rgba(154, 191, 226, 0.5));
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding:30px;
+
+}
+.acerca1{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
 /* footer{
     background-color:black;
     width:400px;
