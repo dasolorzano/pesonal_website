@@ -14,39 +14,40 @@ padding:0;
 
 a{
     text-decoration: none;
-    color: #22007c;
+    color: #0079f3;
     font-weight: bold;
 }
 li{
-    border: solid 1px black;
+    border: solid 1px #ffb703;
     padding: 15px;
-    background-color: #fdfcdc;
+    background-color: white;
     width: 200px;
     margin: 30px;
     text-align: center;
     border-radius: 30px ;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 3px 3px 3px #ffb703;
     /* ETQ: box-shadow; no.+ arriba/ no.- abajo,no.+ derecha/ no.- izquierda, intencidad, color */
     list-style-type: none;
 }
 li:hover{
-    color: #fdfcdc;
-    background-color: #7678ed;
+    color: #0079f3;
+    background-color: #FFD60A;
     font-size: 1.5em;
-    opacity: .5;
+    opacity:inherit;
 }
 nav p {
     font-weight: bold;
-    color: rgb(100, 109, 237);
+    color: #FFD60A;
     font-size: 35px;
-    text-shadow: -3px -3px 3px cornflowerblue;
+    text-shadow: -3px -3px 3px #0079f3;
     letter-spacing: 3px;
 }
 img {
     width: 15em;
+    border-radius: 30px ;
 }
 header{
-    background: linear-gradient( #faedcd,#faedcd,#fefae0,rgba(40, 139, 231, 0.404), rgba(40, 139, 231, 0.404),#fff,#fff);
+    background: linear-gradient(#03045e, #03045e,#023e8a,rgba(40, 139, 231, 0.404),#fff,#fff);
 /* backgroun: linear-grading indica difuminar colores Maximo 3 colores  */
     padding: 80px;
     width:100%;
@@ -78,11 +79,14 @@ nav{
 h1{
     font-size: 4em;
     text-align: right;
+    color: #0609b3;
+    text-shadow: 3px 3px 3px #FFD60A;
+
 }
 span{
-    color: rgb(100, 109, 237);
+    color: #FFD60A;
     font-style: italic;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px #0609b3;
 }
 /* starts section ACERCA DE */
 
