@@ -145,10 +145,35 @@ h2{
     right: 1px;
     width: 80px;
 }
+                            /* seccion Paralax */
+.paralax{
+    width: 100%;
+    height: 40vh;
+    background:url(../img/pexels-joão-jesus-925707.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paralax p{
+    width:60%;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(102, 140, 211);
+    text-shadow: 0 0 7px #fff,
+    0 0 14px #fff,
+    0 0 21px #fff,
+    0 0 41px #73e773,
+    0 0 80px #73e773,
+    0 0 120px #73e773;
 
 
-
-
+}
+.portafolio{
+height: 100vh;
+}
 
                                 /* Aqui comienza el diseno para pantallas de mobil */
 
