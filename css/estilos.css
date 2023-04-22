@@ -123,12 +123,65 @@ h2{
 }
 
 
-
-
-
 /* footer{
     background-color:black;
     width:400px;
     height: 30vh;
     overflow: auto;
 } */
+
+
+.hamburgesa{
+    display: none;
+}
+#menu{
+    display: none;
+}
+
+/* log de whatapp */
+.WhatsApp{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 80px;
+}
+
+
+
+
+
+                                /* Aqui comienza el diseno para pantallas de mobil */
+
+@media(max-width:900px){
+    nav ul {
+        display:none;
+        position: absolute;
+        top: 200px;
+        right: 100px;
+
+    }
+
+    .hamburgesa{
+        display: block;
+        width: 80px;
+    }
+
+    input:checked ~ul{
+        display: block;
+        box-shadow:whitesmoke;
+    }
+    /*  input:checkbox ul{
+        display: block;
+        es para que el menu se despliegue si es seleccionado*/
+    
+    .cajita{
+        display: none;
+    }
+    .nombre{
+        display:block;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
