@@ -1,62 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Daniela Solorzano</title>
-</head>
-<body>
-    <header>
-        <nav>
-        <div>
-            <img src="img/dslogo.jpg" alt="logo" >
-            <p> Daniela Solorazno</p>
-        </div>
-        <input type="checkbox" name="" id="menu">
-        <label for="menu"><img src="img/barra-de-menus.png" alt="" srcset=""class="hamburgesa"></label>
-        <!-- eriqueta: lable = ayudad a hacer check sobre la imagen -->
-        <ul>
-            <a href=""><li> Inicio</li> </a>
-            <a href=""><li>Sobre mi</li></a>
-            <a href=""><li>Contacto</li></a>
-            <a href=""><li>Portafolio</li></a>
-        </ul>
-        </nav>
+k*{
+    /* eliminar margenes que por automatico da el navegador */
+margin: 0;
+padding:0;
+}
+/* p{
+    margin:50px ;
+    border:solid 5px blue ;
+    padding: 30px;
+} */
+
+/* barra de menu */
 
 
+a{
+    text-decoration: none;
+    color: #0079f3;
+    font-weight: bold;
+}
+li{
+    border: solid 1px #ffb703;
+    padding: 15px;
+    background-color: white;
+    width: 200px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 30px ;
+    box-shadow: 3px 3px 3px #ffb703;
+    /* ETQ: box-shadow; no.+ arriba/ no.- abajo,no.+ derecha/ no.- izquierda, intencidad, color */
+    list-style-type: none;
+}
+li:hover{
+    color: #0079f3;
+    background-color: #FFD60A;
+    font-size: 1.5em;
+    opacity:inherit;
+}
+nav p {
+    font-weight: bold;
+    color: #FFD60A;
+    font-size: 35px;
+    text-shadow: -3px -3px 3px #0079f3;
+    letter-spacing: 3px;
+}
+img {
+    width: 15em;
+    border-radius: 30px ;
+}
+header{
+    background: linear-gradient(#03045e, #03045e,#023e8a,rgba(40, 139, 231, 0.404),#fff,#fff);
+/* backgroun: linear-grading indica difuminar colores Maximo 3 colores  */
+    padding: 80px;
+    width:100%;
+    height: 100vh;
+}
+ul{
+    display: flex;
+    /* ETQ display (box); flex _ formna en que movemos elementos */
+}
+nav{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.caja{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cajita{
+    width: 50%;
+}
+.cajita img{
+    width: 80%;
+}
+h1{
+    font-size: 4em;
+    text-align: right;
+    color: #0609b3;
+    text-shadow: 3px 3px 3px #FFD60A;
+
+}
+span{
+    color: #FFD60A;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #0609b3;
+}
+/* starts section ACERCA DE */
+
+.acerca{
+    width: 100%;
+    height: 80vh;
+    background: url(../img/fondo_azul.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+.acerca2{
+    width: 60%;
+    height: 50vh;
+    text-align:justify;
+    background: linear-gradient(to right,  rgba(40, 139, 231, 0.493), rgba(154, 191, 226, 0.5));
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding:30px;
+
+}
+.acerca1{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-
-        <div class="caja">
-            <div class="cajita nombre">
-                <h1 > DANIELA <span>SOLORZANO </span>  NOVELLA </h1>
-                <p> Mi recorrido en Escuela de Codigo PILARES </p>
-            </div>
-            <div class="cajita">
-                <img src="img/fotofrente.png" alt="imagen">
-            </div>
-        </div>
-    </header>
+/* footer{
+    background-color:black;
+    width:400px;
+    height: 30vh;
+    overflow: auto;
+} */
 
 
-    <main>
-        <section class="acerca">
-            <h2>ACERCA DE</h2>
-            <div class="acerca1">
-                
-                <div class="acerca2">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore commodi ipsam impedit, possimus quos, soluta eos dolorum facere consectetur cum dignissimos placeat dolor nihil odio animi excepturi quae vero adipisci molestias sapiente eligendi neque saepe. Ipsa enim vitae suscipit maxime quidem. Aspernatur quia consequatur reiciendis aliquam harum velit provident exercitationem. Libero vero, expedita asperiores praesentium delectus cumque magnam architecto officia dolorem ad ex? Perspiciatis non inventore sapiente, porro aliquid eveniet. Sit, aliquid beatae quisquam vitae omnis, tempore, officia sint alias quod ab inventore odio enim accusantium deleniti? At, ipsa optio laboriosam aperiam, magni labore ipsum vitae maxime repudiandae consequatur molestiae! </p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae harum laudantium deserunt voluptate similique accusamus, autem quisquam atque. Quae dolorem, culpa soluta explicabo deserunt iusto quisquam doloribus. Ipsum voluptates ullam voluptatibus voluptatum numquam provident debitis veritatis? Ipsa, quae! Cumque beatae unde, fugit, voluptatibus ratione repellendus nobis quasi nulla impedit alias voluptas, facilis ea a. Repellat molestias quod, id, laborum voluptatibus, praesentium voluptatum debitis dolore distinctio accusantium doloremque iusto similique cumque dicta numquam odit est maiores accusamus laboriosam officia fuga. Libero a consectetur aliquam quas in iste recusandae, explicabo inventore doloribus laudantium odio? Eius natus odio at rerum saepe, nulla quae!</p>
-        ETQ: lorem se usa para rellenarespacio con texto ex. lorem100 ( llena espacio con 100 palabras) -->
+.hamburgesa{
+    display: none;
+}
+#menu{
+    display: none;
+}
 
-    </footer>
-    <img src="img/whatsapp_icono.png" class="WhatsApp">
-</body>
-</html>
+/* log de whatapp */
+.WhatsApp{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 80px;
+}
+                            /* seccion Paralax */
+.paralax{
+    width: 100%;
+    height: 40vh;
+    background:url(../img/pexels-joão-jesus-925707.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paralax p{
+    width:60%;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(102, 140, 211);
+    text-shadow: 0 0 7px #fff,
+    0 0 14px #fff,
+    0 0 21px #fff,
+    0 0 41px #73e773,
+    0 0 80px #73e773,
+    0 0 120px #73e773;
+
+
+}
+.portafolio{
+height: 100vh;
+}
+
+                                /* Aqui comienza el diseno para pantallas de mobil */
+
+@media(max-width:900px){
+    nav ul {
+        display:none;
+        position: absolute;
+        top: 200px;
+        right: 100px;
+
+    }
+
+    .hamburgesa{
+        display: block;
+        width: 80px;
+    }
+
+    input:checked ~ul{
+        display: block;
+        box-shadow:whitesmoke;
+    }
+    /*  input:checkbox ul{
+        display: block;
+        es para que el menu se despliegue si es seleccionado*/
+    
+    .cajita{
+        display: none;
+    }
+    .nombre{
+        display:block;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
